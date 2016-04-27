@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: EVIL PLUGIN
-Description: WebShell
+Plugin Name: Evil WP Plugin
+Description: Basic WebShell
 Version: 1.0
 Author: Daniel
 Author URI: http://localhost/
@@ -16,8 +16,6 @@ define('EVIL_PLUGIN_VERSION', '1.0');
 define('EVIL_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('EVIL_PLUGIN_URL', plugin_dir_url(__FILE__));
 
-
-
 /**
  * Load files
  * 
@@ -30,15 +28,12 @@ function evil_plugin_load(){
 
 evil_plugin_load();
 
-
-
 /**
  * Activation, Deactivation and Uninstall Functions
  * 
  **/
 register_activation_hook(__FILE__, 'evil_plugin_activation');
 register_deactivation_hook(__FILE__, 'evil_plugin_deactivation');
-
 
 function evil_plugin_activation() {
     
@@ -60,6 +55,5 @@ function evil_plugin_uninstall(){
     //Actions to perform once on plugin uninstall go here
 	    
 }
-
 
 ?>
