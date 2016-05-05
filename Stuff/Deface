@@ -4,5 +4,5 @@
 # Credits: Daniel Teixeira
 
 curl -o /var/www/html/index.html https://raw.githubusercontent.com/DanielRTeixeira/Web/master/Stuff/index.html
-curl -o /var/www/html/umbrella.swf https://raw.githubusercontent.com/DanielRTeixeira/Web/master/Stuff/Umbrella.swf
+curl -o /var/www/html/umbrella.swf https://raw.githubusercontent.com/DanielRTeixeira/Web/master/Stuff/umbrella.swf
 curl https://raw.githubusercontent.com/DanielRTeixeira/Web/master/Stuff/Hacked.html
