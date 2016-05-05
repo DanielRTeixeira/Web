@@ -1,5 +1,6 @@
 yum install epel-release.noarch
 yum -y --enablerepo=epel install mod_security
+curl -L https://raw.githubusercontent.com/DanielRTeixeira/Web/master/ModSecurity/httpd.conf >> /etc/httpd/conf/httpd.conf
 mkdir /etc/httpd/crs
 cd /etc/httpd/crs
 curl -LO https://github.com/SpiderLabs/owasp-modsecurity-crs/tarball/master
@@ -7,7 +8,6 @@ tar -xvf master
 mv SpiderLabs-owasp-modsecurity-crs-* owasp-modsecurity-crs
 cd  /etc/httpd/crs/owasp-modsecurity-crs/
 cp modsecurity_crs_10_setup.conf.example modsecurity_crs_10_setup.conf
-curl -L https://raw.githubusercontent.com/DanielRTeixeira/Web/master/ModSecurity/httpd.conf >> /etc/httpd/conf/httpd.conf
 curl -o /etc/httpd/conf/httpd.conf https://github.com/DanielRTeixeira/Web/blob/master/ModSecurity/mod_security.conf
 apachectl restart
 systemctl status httpd
