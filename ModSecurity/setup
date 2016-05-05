@@ -7,7 +7,7 @@ tar -xvf master
 mv SpiderLabs-owasp-modsecurity-crs-* owasp-modsecurity-crs
 cd  /etc/httpd/crs/owasp-modsecurity-crs/
 cp modsecurity_crs_10_setup.conf.example modsecurity_crs_10_setup.conf
-curl -K https://raw.githubusercontent.com/DanielRTeixeira/Web/master/ModSecurity/httpd.conf >> /etc/httpd/conf/httpd.conf
-curl -o /etc/httpd/conf/httpd.conf https://github.com/DanielRTeixeira/Web/blob/master/ModSecurity/mod_security.conf
+curl https://raw.githubusercontent.com/DanielRTeixeira/Web/master/ModSecurity/httpd.conf >> /etc/httpd/conf/httpd.conf
+curl -o /etc/httpd/modsecurity.d/mod_security.conf https://raw.githubusercontent.com/DanielRTeixeira/Web/master/ModSecurity/mod_security.conf
 apachectl restart
 systemctl status httpd
